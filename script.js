@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const lenses = document.querySelectorAll('.lens');
 
     const timePeriods = [
-        { period: '早上通勤', start: 6 * 60, end: 9 * 60, percentage: 8 },
+        { period: '早上通勤', start: 8 * 60, end: 9 * 60, percentage: 8 },
         { period: '上午上班', start: 9 * 60, end: 12 * 60, percentage: 30 },
-        { period: '中午休息', start: 12 * 60, end: 13 * 60, percentage: 10 },
-        { period: '下午上班', start: 13 * 60, end: 18 * 60, percentage: 30 },
-        { period: '下午吃晚饭', start: 18 * 60, end: 19 * 60, percentage: 8 },
-        { period: '晚上上班', start: 19 * 60, end: 21 * 60, percentage: 14 },
+        { period: '中午休息', start: 12 * 60, end: 14 * 60, percentage: 10 },
+        { period: '下午上班', start: 14 * 60, end: 19 * 60, percentage: 30 },
+        { period: '下午吃晚饭', start: 19 * 60, end: 20 * 60, percentage: 8 },
+        { period: '晚上上班', start: 20 * 60, end: 21 * 60, percentage: 14 },
     ];
 
     const nightTimeStart = 21 * 60; // 21:00 in minutes
