@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.piggy-bank {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: url('https://pic.chaopx.com/chao_origin_pic/23/06/29/eb987242bec513e22fa60e2e912f05d5.jpg!/fw/572/quality/90/unsharp/true/compress/true') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.glasses {
+    position: absolute;
+    top: 40px; /* Adjusted for better alignment */
+    left: 50%;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-50%);
+}
+
+.lens {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent color */
+    border: 3px solid #FFD700; /* Yellow frame */
+    border-radius: 50%;
+    position: relative;
+}
+
+.coins {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: gold;
+    transition: height 0.5s;
+    border-radius: 0 0 50% 50%;
+    opacity: 0.8;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF69B4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar-container {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    background-color: #ddd;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.5s;
+    border-radius: 15px 0 0 15px;
+}
+
+.progress-segments {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#progress-percent {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#time-period, #current-time {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.piggy-bank {
+    animation: bounce 2s infinite;
+}
