@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Night time period
             currentPeriod = '休息时间';
             progressPercent = 100; // Full progress for rest time
-            piggyBank.style.backgroundImage = "url('https://sns-webpic-qc.xhscdn.com/202408061147/900942998d35c18a11c3a2c43ded87fb/spectrum/1040g0k030nng0dlr7g0g5n73ebb1dgfgcrclicg!nc_n_webp_mw_1')"; // Replace with your image URL
+            piggyBank.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-uWjYHLBYiTTQjvaw6xfPWm-CfBP44w1Vw&s')"; // Replace with your image URL
         } else {
             // Day time periods
             for (const period of timePeriods) {
